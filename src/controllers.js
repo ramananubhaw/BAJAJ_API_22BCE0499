@@ -45,6 +45,8 @@ const controller = (req, res) => {
             : reversedConcat[i].toLowerCase();
         }
 
+        console.log(req);
+
         res.status(200).json({
             is_success: true,
             user_id: USER_ID,
